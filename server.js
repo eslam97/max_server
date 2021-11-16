@@ -9,7 +9,7 @@ const express = require('express');
 //end packages
 
 //start DataBase Connection
-const connectDB = require('./config/db')
+const connectDB = require('./src/config/db')
 //end DataBase Connection
 
 //start Express
@@ -17,7 +17,7 @@ const app = express();
 //end Express
 
 //start Define Routes
-const investorRoute = require('./lib/routes/investor')
+const investorRoute = require('./src/lib/routes/investor')
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
